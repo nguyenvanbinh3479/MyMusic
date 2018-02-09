@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0d0204"
+    tools:context="com.example.quoctuan.mymusic.ListenMusicActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/ic_menu"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="@string/my_music"
+            android:textSize="20sp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@drawable/ic_right"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </android.support.v7.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/soobin"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <TextView
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:text="phía sau một cô gái"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:text="Soobin Hoàng Sơn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:text="00:00"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:text="4:30"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <include layout="@layout/item_listen"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
