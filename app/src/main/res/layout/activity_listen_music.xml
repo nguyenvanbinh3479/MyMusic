@@ -11,21 +11,29 @@
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <ImageView
-            android:src="@drawable/ic_menu"
-            android:layout_width="30dp"
-            android:layout_height="30dp" />
-        <TextView
-            android:gravity="center"
-            android:textColor="@android:color/white"
-            android:text="@string/my_music"
-            android:textSize="20sp"
-            android:layout_width="320dp"
-            android:layout_height="wrap_content" />
-        <ImageView
-            android:src="@drawable/ic_right"
-            android:layout_width="30dp"
-            android:layout_height="30dp" />
+        <RelativeLayout
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_menu"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:text="@string/my_music"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_right"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+
     </android.support.v7.widget.Toolbar>
 
     <de.hdodenhof.circleimageview.CircleImageView
