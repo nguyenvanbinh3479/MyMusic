@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#33304f"
+    android:background="@drawable/bkg2"
     tools:context="com.example.quoctuan.mymusic.ListenMusicActivity">
 
     <android.support.v7.widget.Toolbar
@@ -20,7 +20,7 @@
             android:textColor="@android:color/white"
             android:text="@string/my_music"
             android:textSize="20sp"
-            android:layout_width="300dp"
+            android:layout_width="320dp"
             android:layout_height="wrap_content" />
         <ImageView
             android:src="@drawable/ic_right"
@@ -55,10 +55,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <RelativeLayout
+        android:paddingTop="70dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <TextView
+            android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
             android:textColor="@android:color/white"
             android:textSize="20sp"
@@ -67,6 +69,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
+            android:layout_marginRight="15dp"
             android:layout_marginTop="10dp"
             android:textColor="@android:color/white"
             android:textSize="20sp"
@@ -74,15 +77,15 @@
             android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
+            <include layout="@layout/item_listen"/>
+
+        </RelativeLayout>
     </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
-        <include layout="@layout/item_listen"/>
-
-    </RelativeLayout>
 
 </LinearLayout>
